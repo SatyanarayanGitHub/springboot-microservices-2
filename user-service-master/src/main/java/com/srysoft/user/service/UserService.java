@@ -1,5 +1,6 @@
 package com.srysoft.user.service;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -38,4 +39,6 @@ public class UserService {
 
 		return vo;
 	}
+
+
 }
